@@ -1,0 +1,19 @@
+{% extends 'posts/layout.html' %}
+{% load static %}
+{% block content %}
+<h3 class="center-align blue lighten-3 title">{{post.title}}</h3>
+<div class="card">
+    <div class="card-content details">
+        {{post.body}}
+    </div>
+    <div class="card-content details">
+        {% if post.image %}
+            <img src="{{post.image.url}}" alt="">
+        {% endif %}
+        </div>
+    <div class="card-action details-image">
+        {{post.created_at}}
+    </div>
+</div>
+<a class="btn" href="/posts">Go back</a>
+{% endblock %}

@@ -1,0 +1,36 @@
+html {
+  --myFooterColor: #130f0c;
+  --myFont: #00b0ff;
+  --myPDFcolor: #525659;
+  --myShadow: 0 5px 5px rgba(104, 104, 104, 0.8);
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+a {
+  color: var(--myFont);
+}
+
+a:hover {
+  color: blue;
+}
+
+.index-links {
+  font-size: larger;
+}
+
+.title {
+  color: white;
+}
+.details {
+  font-size: larger;
+}
